@@ -22,8 +22,7 @@ In this project, you will analyze local and global temperature data and compare 
 	```
 3. To join the city level data and global data based on the common field and download the file as ‘results.csv’
 	```
-	SELECT city_data.avg_temp as city_avg_temp,
-        global_data.avg_temp as global_avg_temp, global_data.year
+	SELECT city_data.avg_temp as city_avg_temp, global_data.avg_temp as global_avg_temp, global_data.year
   	FROM global_data
   	JOIN city_data
   	ON global_data.year = city_data.year
